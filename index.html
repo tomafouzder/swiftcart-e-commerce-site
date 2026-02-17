@@ -27,7 +27,7 @@
 
 </head>
 
-<body>
+<body class="bg-gray-100">
     <!-- Header -->
     <header class="">
 
@@ -42,7 +42,7 @@
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
                         <li><a>Home</a></li>
-                        <li><a>Products</a></li>
+                        <li><a id="btn-products" href="./products.html">Products</a></li>
                         <li><a>About</a></li>
                         <li><a>contact</a></li>
                     </ul>
@@ -78,12 +78,12 @@
 
                 <img src="./Assets/banner-image.png" alt="banner-image" class="w-full object-cover h-[500px]">
 
-                <div
-                    class="absolute inset-0 bg-gradient-to-r from-gray-900/100 via-gray-900/60 pt-40 to-transparent ">
+                <div class="absolute inset-0 bg-gradient-to-r from-gray-900/100 via-gray-900/60 pt-40 to-transparent ">
 
-                    <div class=" space-y-5 max-w-6xl mx-auto  text-white p-6 md:p-0">
+                    <div class=" space-y-5 max-w-6xl mx-auto  text-white p-6 lg:p-0">
                         <h1 class="font-bold text-4xl md:text-5xl ">Best Collection For You</h1>
-                        <p class="text-gray-200 text-xl md:text-lg ">Discover the latest trends in fashion, <br class="block md:hidden"> electronics, and more . shop with <br> confidence and
+                        <p class="text-gray-200 text-xl md:text-lg ">Discover the latest trends in fashion, <br
+                                class="block md:hidden"> electronics, and more . shop with <br> confidence and
                             style
                             at
                             SwiftCart
@@ -98,11 +98,173 @@
             </div>
         </div>
 
-
-        
-        
-
     </header>
+
+    <!-- main sections -->
+    <main class="">
+
+        <!-- why choose us sections -->
+        <section class="pb-20 max-w-6xl mx-auto">
+            <div class="text-center py-20">
+                <h1 class="text-4xl font-bold mb-2">Why Choose Us</h1>
+                <p class="text-lg text-gray-500 px-4">we provide the best shopping experience with top-notch services
+                </p>
+            </div>
+
+            <!-- --------------- -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-6 lg:px-0 px-6">
+
+                <!-- Card -1 -->
+                <div class="relative bg-white rounded-xl shadow-sm p-6 text-center">
+
+                    <!-- Icon -->
+                    <div class="absolute -top-6 left-12 -translate-x-1/2 bg-white p-1 rounded-lg shadow">
+                        <div class="bg-indigo-200 rounded-lg p-2">
+                            <i class="fa-regular fa-truck text-2xl text-blue-600"></i>
+                        </div>
+
+                    </div>
+
+                    <!-- Content -->
+                    <h2 class="mt-8 text-lg font-semibold">Fast Delivery</h2>
+                    <p class="mt-2 text-sm text-gray-500">
+                        Get your orders delivered to your doorstep quickly and efficiently.
+                    </p>
+
+                </div>
+
+                <!-- Card -2 -->
+                <div class="relative bg-white rounded-xl shadow-sm p-6 text-center">
+
+                    <!-- Icon -->
+                    <div class="absolute -top-6 left-12 -translate-x-1/2 bg-white p-1 rounded-lg shadow">
+                        <div class="bg-indigo-200 rounded-lg p-2">
+                            <i class="fa-regular fa-headphones text-2xl text-blue-600"></i>
+                        </div>
+
+                    </div>
+
+                    <!-- Content -->
+                    <h2 class="mt-8 text-lg font-semibold">24/7 Support</h2>
+                    <p class="mt-2 text-sm text-gray-500">
+                        Our support team is available around the clock to assist you.
+                    </p>
+
+                </div>
+
+                <!-- Card -3 -->
+                <div class="relative bg-white rounded-xl shadow-sm p-6 text-center">
+
+                    <!-- Icon -->
+                    <div class="absolute -top-6 left-12 -translate-x-1/2 bg-white p-1 rounded-lg shadow">
+                        <div class="bg-indigo-200 rounded-lg p-2">
+                            <i class="fa-solid fa-shield-halved text-2xl text-blue-600"></i>
+                        </div>
+
+                    </div>
+
+                    <!-- Content -->
+                    <h2 class="mt-8 text-lg font-semibold">Secure Payment </h2>
+                    <p class="mt-2 text-sm text-gray-500">
+                        Experience safe and secure transactions with our encrypted payment system.
+                    </p>
+
+                </div>
+
+                <!-- Card -4 -->
+                <div class="relative bg-white rounded-xl shadow-sm p-6 text-center">
+
+                    <!-- Icon -->
+                    <div class="absolute -top-6 left-12 -translate-x-1/2 bg-white p-1 rounded-lg shadow">
+                        <div class="bg-indigo-200 rounded-lg p-2">
+                            <i class="fa-solid fa-arrows-rotate text-2xl text-blue-600"></i>
+                        </div>
+
+                    </div>
+
+                    <!-- Content -->
+                    <h2 class="mt-8 text-lg font-semibold">Easy Returns</h2>
+                    <p class="mt-2 text-sm text-gray-500">
+                        Not satisfied ? Return your products easily within 30 days.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+
+        <!-- products sections -->
+        <section class="bg-white pb-16">
+            <div class=" max-w-6xl mx-auto p-4">
+                <h1 class="text-3xl font-bold pt-16 pb-8 px-6 lg:px-0">Trending Now </h1>
+
+                <div id="cart-filter"
+                    class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-6 lg:px-0 gap-6 ">
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- all products -->
+        <section class="min-h-40">
+            <h1>Our Products</h1>
+            
+            <div id="products-category">
+
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <!-- footer sections -->
+    <footer class="bg-gray-700">
+        <section class="footer sm:footer-horizontal max-w-6xl mx-auto p-10">
+            <nav>
+                <h6 class=" text-indigo-500 font-bold text-3xl ">SwiftCart</h6>
+                <p class="text-gray-300">Your one-stop shop for all your <br> fashion ans lifestyle needs. Quality
+                    products, <br> fast delivery and excellent support.</p>
+            </nav>
+            <nav class="text-gray-300">
+                <h6 class="footer-title">Quick Links</h6>
+                <a class="link link-hover">Home</a>
+                <a class="link link-hover">Products</a>
+                <a class="link link-hover">About</a>
+                <a class="link link-hover">Contact</a>
+            </nav>
+            <nav class="text-gray-300">
+                <h6 class="footer-title">Support</h6>
+                <a class="link link-hover">FAQ</a>
+                <a class="link link-hover">Shipping</a>
+                <a class="link link-hover">Returns</a>
+                <a class="link link-hover">Privacy Policy</a>
+            </nav>
+            <form class="text-gray-300">
+                <h6 class="footer-title">subscribe to our newsletter</h6>
+                <fieldset class="w-80">
+                    <label>The latest, news. article, and resources, sent to inbox weekly
+                    </label>
+
+                    <div class="join gap-2 pt-2">
+                        <input type="text" placeholder="Enter Your Email"
+                            class="input text-gray-500 input-bordered join-item" />
+                        <button class="btn btn-primary join-item">Subscribe</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </footer>
+
+
+
+    <script src=" ./script/index.js">
+    </script>
 </body>
 
 </html>
